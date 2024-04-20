@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 17
+Implementation-Title: auth-service-liquibase
+Implementation-Version: 0.0.1-SNAPSHOT
+Main-Class: org.dyanyog.AuthenticationServiceMain
+Created-By: Maven Integration for Eclipse
+
