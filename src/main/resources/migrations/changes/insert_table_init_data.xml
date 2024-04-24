@@ -2,16 +2,47 @@
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
- <changeSet author="Anuja Chavan" id="20240420">
-	 		<insert schemaName="auth_service" tableName="users">
+	<changeSet author="Anuja Chavan" id="20240427">
+		<insert schemaName="authentication_service_db" tableName="Users">
 			<column name="user_id" value="1" />
 			<column name="user_code" value="20" />
 			<column name="user_name" value="abc" />
-            <column name="password" value="123" />
-            <column name="email" value="abc@gmil.com" />
-            <column name="age" value="20" />
+			<column name="password" value="123" />
+			<column name="email" value="abc@gmil.com" />
+			<column name="age" value="20" />
+		</insert>
+
+		<insert schemaName="authentication_service_db" tableName="Users">
+			<column name="user_id" value="2" />
+			<column name="user_code" value="10" />
+			<column name="user_name" value="tanuja" />
+			<column name="password" value="123" />
+			<column name="email" value="tanuja@gmil.com" />
+			<column name="age" value="20" />
+		</insert>
+		
+		<insert schemaName="authentication_service_db" tableName="Users">
+			<column name="user_id" value="3" />
+			<column name="user_code" value="12" />
+			<column name="user_name" value="admin" />
+            <column name="password" value="admin123" />
+            <column name="email" value="admin@gmil.com" />
+            <column name="age" value="11" />
 
 
 		</insert>
+		
+	<!--	<changeSet id="encrypt_passwords" author="your_name">
+    <sql>UPDATE users SET password = 'encrypted_password' WHERE id = 1;</sql>
+</changeSet>
+
+
+<sql>
+        INSERT INTO your_table (id, username, password)
+        VALUES (1, 'example_username', 'encrypted_password');
+    </sql>
+
+	-->	
+
 	</changeSet>
 </databaseChangeLog>

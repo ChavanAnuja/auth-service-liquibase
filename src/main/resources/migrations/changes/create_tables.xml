@@ -4,8 +4,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
 	
- <changeSet author="Anuja Chavan" id="20240420">		
-		<createTable tableName="users" schemaName="auth_service">
+ <changeSet author="Anuja Chavan" id="20240427">		
+		<createTable tableName="Users" schemaName="authentication_service_db">
 			<column name="user_id" type="int">
 				<constraints primaryKey="true" />
 			</column>
@@ -15,7 +15,7 @@
 			<column name="user_name" type="varchar(200)">
 				<constraints nullable="false" />
 			</column>
-			<column name="password" type="int">
+			<column name="password" type="varchar(20)">
 				<constraints nullable="false" />
 			</column>
 			<column name="email" type="varchar(200)">

@@ -1,16 +1,11 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
                    
-    <changeSet author="Anuja Chavan" id="20240420">
+    <changeSet author="Anuja Chavan" id="20240427">
         <sql stripComments="true">
-            CREATE SCHEMA IF NOT EXISTS auth_service;
+            CREATE SCHEMA IF NOT EXISTS authentication_service_db;
         </sql>
     </changeSet>
     
-     <changeSet author="Anuja Chavan" id="20240420_1">
-        <sql stripComments="true">
-            CREATE SCHEMA IF NOT EXISTS auth_service_1;
-        </sql>
-    </changeSet>
 
 </databaseChangeLog>

@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class LoginRequest { // DTO => Data Transfer Object
   // View
-  private String username = "Admin";
-  private String password = "Admin123";
+  private String username;
+  private String password;
 
   public String getUsername() {
     return username;

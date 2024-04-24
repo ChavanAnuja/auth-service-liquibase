@@ -30,7 +30,8 @@ public class UserManagementServiceImpl implements UserManagementService {
 
     usersTable.setAge(request.getAge());
     usersTable.setEmail(request.getEmail());
-    usersTable.setPassword(encryptionService.encryp(request.getPassword()));
+    // usersTable.setPassword(encryptionService.encryp(request.getPassword()));
+    usersTable.setPassword(request.getPassword());
     usersTable.setUsername(request.getUsername());
 
     usersTable = userRepo.save(usersTable);

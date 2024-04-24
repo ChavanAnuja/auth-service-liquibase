@@ -14,7 +14,6 @@ public class LoginServiceImpl implements LoginService {
 
   @Autowired UsersRepository userRepo;
   @Autowired Users user;
-  @Autowired EncryptionService encryptionService;
 
   public LoginResponse validateUser(LoginRequest loginRequest) {
 
